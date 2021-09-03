@@ -1,181 +1,147 @@
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica, Arial, sans-serif;
-	color: rgb(49, 49, 53);
-	background: #f2f2f2; 
-	font-size: 1em;
-	line-height: 1.5em;
-}
-.slider{
-width: 95%;
-margin:auto;
-overflow:hi;
-}
-.slider ul{
+*{
+    margin:0px;
+    padding:10px;
+    box-sizing: border-box;
+
+} 
+.padre{
     display:flex;
-    padding:0;
-    width:50%;
-
-    animation: cambio 20s infinite;
+    flex-flow:column nowrap;
 }
-.slider li{
-    width:100%;
+a{
+    text-decoration: none;
 }
-.slider img{
-width: 100%;
+  .header{
+          background:url(ccubolivia.jpg);
+          background-position: center;
+          background-attachment:contain;
+          background.size:cover;
+          height: 420px;
+
+           display:flex;
+         flex-flow:column nowrap;}
+         .header img{
+             width:100%;
+         }   
+         .menu { background rgba (0,0,0,.1);
+            display:flex;
+            flex-flow:row nowrap;
+            height: 50px;
+             align-items: center;
+             border-bottom: 1px solid rgba(255,255,255);}  
+
+            .logo{ 
+            flex:1 1 auto
+            
+            }  .logo a{
+                 color:rgb(240, 240, 240);
+                 font-size:30px;
+                 background-color:#001219;
+            }   .logo a:hover{
+                color:#adb1b4
+            }
+
+            .nav{background:#001219;
+            flex:5 1 auto;
+            height: 30px;}
+            .nav a{
+                color:#E9D8A6;
+                font-size:12px;
+                text-transform:uppercase;
+                padding:0 10px;
+                letter-spacing: 2px;
+            }  nav a:hover {
+                color:#E9D8A6;
+            }
+            .social{background:#5e6a8b;
+                height: 30px;
+                flex:1 1 auto;}
+            .texto-principal{ background: #001219;;
+                              width: 23%;
+                             height:50px;
+                             display:flex;
+                             align-items: center;}
+                             h2{
+                                 text-align:center;
+                                 flex-wrap: nowrap;
+                                 line-height:1.6;
+                                 color:#E9D8A6;
+                             }
+                             h1{
+                                 font-size:20px;
+                                 color:#EE9B00;
+                                 font-weight:300;
+                                 text-align:center;
+                                 line-height:1.6;
+                                 font-family:helvetica;
+                                                                }
+            .texto-quienessomos {
+                background:#001219;
+            }
+                                                               
+            .section { background:none;
+          display: flex;}
+         .articulos{ 
+       background:#fafcfc;
+          flex: 2 1 auto;
+          display:flex;
+          flex-flow:row wrap;
+         }
+        
+         .article {
+             background:#005F73;
+        flex:1 1 40%;
+         font-size:13px;
+        letter-spacing:1px;
+    margin :10px 10px 10px 10px;
+       flex: 1 1 45%;
+       background:#005F73;
 }
-@keyframes cambio{
-    8% {margin-left:0;}
-    20% {margin-left:0;}
+        .seccion2{
+            background:#E9D8A6;
+          flex: 2 1 auto;
+          display:flex;
+          flex-flow:row wrap;
+          
+        }
+         .navegacion{background:#CA6702;
+            flex:1 1 20%;
+            display:flex;
+             flex-flow:row wrap;
+             flex:1 1 20%;
+             font-size:13px;
+            letter-spacing:1px;
+             margin :10px 10px 10px 10px;
+           flex: 3 1 20%;
+           background:rgb(240, 240, 240);
+            }
+             .navegacion a{
+                 text-align: center;
+             }
+        
+    .aside{background:#e02727;
+     display:flex;
+     } 
+          .publicidad{background:#4e4e6a;}            
+  .footer{background:#000;
+display:flex;
+justify-content: center;}
+         .pie{background:rgb(250, 244, 244);
+        width:300px;
+    }
 
-    25% {margin-left:-100%;}
-    45% {margin-left:-100%;}
-
-    50% {margin-left -200%;}
-    70% {margin-left:-200%;}
-
-    75% {margin-left -300%;}
-    100% {margin-left:-300%;}
-
-
-
+@media all and (max-width: 800px){
+    .section flex-direction: column;
+}
+@media all and (max-width:800px){
+    .articles flex-direction:column;
+    
+}
+@media all and (max-width:800px){
+    .articulos flex-direction: column;
+    }
+ @media all and (max-width:800px){
+       .navegacion flex-direction: column;
+       
 }
 
-
-
-p {
-	margin: 0 0 1.5em 0;
-    text-align: center;
-}
-
-
-
-
-#main-header {
-	background: rgb(237, 238, 241);
-	color: rgb(245, 245, 248);
-	height: 20px;
-}	
-	#main-header a {
-		color: rgb(240, 241, 248);
-	}
-.logo {background : #005F73}
-
-nav {
-	float: right;
-}
-	nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		padding-right: 10px;
-	}
-	
-		nav ul li {
-			display: inline-block;
-			line-height: 60px;
-		}
-			
-			nav ul li a {
-				display: block;
-				padding: 0 5px;
-				text-decoration: none;
-			}
-			
-				nav ul li a:hover {
-					background: #3123e9;
-				}
-                
-                
-                    #main-content header,
-                    #main-content .content {
-                        padding: 40px;
-                    }
-                    #main-footer {
-                        background: #333;
-                        color: rgb(21, 22, 14);
-                        text-align: center;
-                        padding: 20px;
-                        margin-top: 40px;
-                    }
-                        #main-footer p {
-                            margin: 0;
-                        }
-                        
-                        #main-footer a {
-                            color: rgb(32, 63, 238);
-                        }  
-
-                        #main-header {
-                            background: rgb(56, 15, 219);
-                            color: rgb(36, 9, 134);
-                            height: 60px;
-                            
-                            width: 100%; 
-                            
-                            top: 0; 
-                            position: fixed; 
-                        }
-                        body {
-                            margin: 0;
-                            padding: 0;
-                            font-family: Helvetica, Arial, sans-serif;
-                            color: rgb(241, 241, 241);
-                            background: #f2f2f2; 
-                            font-size: 1em;
-                            line-height: 1.5em;
-                            
-                            padding-top: 80px; 
-                        }
-
-                        .misionVision{
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: center;
-                            padding: 20px;
-                        }
-                        .contenMV{
-                            width: 400px;
-                                                       border-radius: 0px;
-                            background-color: rgb(138, 122, 226);
-                            padding: 10px;
-                            margin: 20px;
-                            border-top-right-radius: unset;
-                        }
-                        .mvTitulo{
-                            padding: 10px;
-                            font-weight: bolder;
-                            font-size: 1.2em;
-                            text-align: center;
-                            font-family: 'Courier New', Courier, monospace;
-                        }
-
-                        .somos{
-                            width: 100%;
-                            padding: 50px;
-                          background-repeat: no-repeat;
-                            background-size: 100% ;
-                            
-                        }
-                        .somosText{
-                            background-color: #2557a1c0;
-                            color: #ffffff;
-                            padding: 10px;
-                            text-align: center;
-                            font-weight: bolder;
-                            font-size: 1.2em;
-                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                        }
-                        .somosTextM{
-                            background-color: #0066afc0;
-                            color: #ffffff;
-                            padding: 10px;
-                            text-align: center;
-                            font-weight: bolder;
-                            font-size: 1.2em;
-                            display: none;
-                            
-                            
-                        }
-                       
